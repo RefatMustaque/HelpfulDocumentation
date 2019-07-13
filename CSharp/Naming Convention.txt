@@ -1,0 +1,12 @@
+camelCase
+----------------------
+variable
+control
+Parameter
+
+PascalCase
+------------------------
+class
+property
+form
+method

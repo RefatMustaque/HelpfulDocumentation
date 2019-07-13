@@ -1,0 +1,16 @@
+It will create 3 overload for customer
+---------------------------------------------
+public Customer(string firstName, string middleName, string lastName):this(firstName, lastName)
+{
+	MiddleName = middleName;
+}
+
+public Customer(string firstName, string lastName): this(firstName)
+{
+        LastName = lastName;
+}
+
+public Customer(string firstName)
+{
+	FirstName = firstName;
+}

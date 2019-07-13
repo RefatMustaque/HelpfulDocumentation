@@ -1,0 +1,23 @@
+explicit conversion
+----------------------
+int number = 2323;
+long bigNumber = 12;
+string inputNumber = "283920";
+
+number = Convert.ToInt32(bigNumber); //convert work with everything
+
+
+
+casting
+----------
+number = (int)bigNumber; //casting work with compatible type
+
+number = (int)inputNumber //won't work
+
+
+
+parsing
+----------
+number = int.Parse(inputNumber) //Parse work with only string
+
+number = int.Parse(bigNumber) // won't work

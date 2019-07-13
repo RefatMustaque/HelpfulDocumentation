@@ -1,0 +1,9 @@
+creat empty repository in local
+-------------------------------
+git init
+
+
+
+know the Git status
+--------------------
+git status

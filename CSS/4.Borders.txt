@@ -1,0 +1,111 @@
+----------------Border-style----------------
+
+p {
+    border-style: dotted;
+  }
+
+
+----------------Border-style property specifies what kind of border to display----------------
+
+
+----------------Value for border-style property----------------
+
+dotted - Defines a dotted border
+dashed - Defines a dashed border
+solid - Defines a solid border
+double - Defines a double border
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+none - Defines no border
+hidden - Defines a hidden border
+
+
+----------------None of the OTHER CSS border properties described below will have ANY effect unless the border-style property is set!----------------
+
+
+----------------border-width----------------
+
+p {
+    border-style: solid;
+    border-width: 5px;
+}
+
+
+----------------border-width property can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick----------------
+
+
+
+----------------border-color----------------
+
+p.one {
+    border-style: solid;
+    border-color: red;
+}
+
+
+----------------If border-color is not set, it inherits the color of the element----------------
+
+
+----------------Border - Individual Sides----------------
+
+p {
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+}
+
+
+----------------The example above gives the same result as this----------------
+
+p {
+    border-style: dotted solid;
+}
+
+
+----------------If the border-style property has two values----------------
+
+border-style: dotted solid;
+top and bottom borders are dotted
+right and left borders are solid
+
+
+----------------If the border-style property has one value----------------
+
+border-style: dotted;
+all four borders are dotted
+
+
+----------------Border Shorthand Property----------------
+
+p {
+    border: 5px solid red;
+}
+
+
+----------------The border property is a shorthand property for the following individual border properties----------------
+
+border-width
+border-style (required)
+border-color
+
+
+----------------Left Border----------------
+
+p {
+    border-left: 6px solid red;
+    background-color: lightgrey;
+}
+
+
+----------------Rounded Borders----------------
+
+p {
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+
+----------------text----------------

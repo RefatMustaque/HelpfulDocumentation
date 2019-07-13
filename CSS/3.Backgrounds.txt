@@ -1,0 +1,75 @@
+----------------background color of a page----------------
+
+body {
+    background-color: lightblue;
+}
+
+
+----------------background image for a page----------------
+
+body {
+    background-image: url("paper.gif");
+}
+
+
+----------------By default, the background-image property repeats an image both horizontally and vertically----------------
+
+
+----------------Some images should be repeated only horizontally or vertically, or they will look strange----------------
+
+
+----------------repeated only horizontally (background-repeat: repeat-x;)----------------
+
+body {
+    background-image: url("gradient_bg.png");
+    background-repeat: repeat-x;
+}
+
+
+----------------To repeat an image vertically, set background-repeat: repeat-y;----------------
+
+
+----------------Showing the background image only once is also specified by the background-repeat property----------------
+
+body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+}
+
+
+----------------The position of the image is specified by the background-position property----------------
+
+body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+
+----------------background image will not scroll with the rest of the page using background-attachment property:----------------
+
+body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+
+----------------shorthand property for background is background:----------------
+
+body {
+    background: #ffffff url("img_tree.png") no-repeat right top;
+}
+
+
+----------------the shorthand property order----------------
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+
+----------------It does not matter if one of the property values is missing, as long as the other ones are in this order----------------

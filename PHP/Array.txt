@@ -1,0 +1,56 @@
+Indexed Arrays
+-------------------------
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+?>
+//Output:
+I like Volvo, BMW and Toyota.
+
+
+
+Loop Through an Indexed Array
+------------------------------------
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+$arrlength = count($cars);
+
+for($x = 0; $x < $arrlength; $x++) {
+    echo $cars[$x];
+    echo "<br>";
+}
+?>
+//Output:
+Volvo
+BMW
+Toyota
+
+
+
+Associative Arrays
+---------------------------
+<?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+echo "Peter is " . $age['Peter'] . " years old.";
+?>
+//Output: Peter is 35 years old.
+
+
+
+Loop Through an Associative Array
+--------------------------------------
+<?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+
+foreach($age as $x => $x_value) {
+    echo "Key=" . $x . ", Value=" . $x_value;
+    echo "<br>";
+}
+?>
+//Output:
+Key=Peter, Value=35
+Key=Ben, Value=37
+Key=Joe, Value=43
+
+
+

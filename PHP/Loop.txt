@@ -1,0 +1,74 @@
+while Loop
+------------------------
+<?php 
+$x = 1; 
+
+while($x <= 5) {
+    echo "The number is: $x <br>";
+    $x++;
+} 
+?>
+//output
+The number is: 1 
+The number is: 2 
+The number is: 3 
+The number is: 4 
+The number is: 5 
+
+
+
+do...while Loop
+----------------------
+<?php 
+$x = 1; 
+
+do {
+    echo "The number is: $x <br>";
+    $x++;
+} while ($x <= 5);
+?>
+//Output:
+The number is: 1 
+The number is: 2 
+The number is: 3 
+The number is: 4 
+The number is: 5
+
+
+
+for Loop
+---------------------------
+<?php 
+for ($x = 0; $x <= 10; $x++) {
+    echo "The number is: $x <br>";
+} 
+?>
+//output
+The number is: 0 
+The number is: 1 
+The number is: 2 
+The number is: 3 
+The number is: 4 
+The number is: 5 
+The number is: 6 
+The number is: 7 
+The number is: 8 
+The number is: 9 
+The number is: 10 
+
+
+
+foreach Loop
+-------------------------
+<?php 
+$colors = array("red", "green", "blue", "yellow"); 
+
+foreach ($colors as $value) {
+    echo "$value <br>";
+}
+?>
+//Output:
+red 
+green 
+blue 
+yellow

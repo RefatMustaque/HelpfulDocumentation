@@ -1,0 +1,12 @@
+var var1 = 3;
+var var2 = 4;
+
+if(var1==var2 && var1 == 3){
+    console.log('if condition is true');
+}
+else if(var1!=var2 && var1 == 3){
+    console.log('else if condition is true');
+}
+else{
+    console.log('else condition is true');
+}

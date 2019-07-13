@@ -1,0 +1,70 @@
+Value type passes by value
+---------------------------
+static void ChangeValue(int x)
+{
+    x =  200;
+
+    Console.WriteLine(x);
+}
+
+static void Main(string[] args)
+{
+    int i = 100;
+
+    Console.WriteLine(i);
+    
+    ChangeValue(i);
+    
+    Console.WriteLine(i);
+}
+
+//output:
+100
+200
+100
+
+
+
+Reference type variable passes by reference
+--------------------------------------------
+static void ChangeReferenceType(Student std2)
+{
+    std2.StudentName = "Steve";
+}
+
+static void Main(string[] args)
+{
+    Student std1 = new Student();
+    std1.StudentName = "Bill";
+    
+    ChangeReferenceType(std1);
+
+    Console.WriteLine(std1.StudentName);
+}
+
+//output:
+Steve
+
+
+
+the following data type are reference type
+-------------------------------------------
+- String
+- All arrays, even if their elements are value types
+- Class
+- Delegates
+
+
+
+value type
+-----------
+- A data type is a value type if it holds a data value within its own memory space
+- A value type variable cannot be null because it holds a value not a memory address.
+- value type field in a class can be declared without initialization (field not a local variable in the function)
+
+
+
+reference type
+---------------
+- it stores the address where the value is being stored
+- Reference types have null value by default

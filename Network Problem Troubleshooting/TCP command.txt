@@ -1,0 +1,9 @@
+resetting TCP/IP
+------------------
+netsh int ip reset
+
+
+
+to open the TCP Global Settings
+---------------------------------
+netsh int tcp show global

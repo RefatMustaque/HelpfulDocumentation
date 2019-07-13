@@ -1,0 +1,54 @@
+Auto implemented property
+-------------------------
+public string Name {get; set;}
+
+
+
+short method with field
+-----------------------
+private int _myPropertyVar;
+
+public int MyProperty
+{
+    get { return _myPropertyVar; }
+    set { _myPropertyVar = value; }
+}
+
+
+
+detail method
+-----------------------
+private int _myPropertyVar;
+
+public int MyProperty
+{
+    get {
+        return _myPropertyVar / 2;
+    }
+
+    set {
+
+        if (value > 100)
+            _myPropertyVar = 100;
+        else
+            _myPropertyVar = value; //value is default keyboard
+    }
+}
+
+
+
+to set value
+---------------------------
+object.Name = "Tonmoy"; //Name is the property;
+
+
+to get value
+-------------------------
+Console.Writeline(object.Name);
+
+
+
+differenct between Method and Property
+---------------------------------------
+property does not have  parameter & first Bracket ()
+

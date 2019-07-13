@@ -1,0 +1,37 @@
+printing hello world
+--------------------
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+//namespaces is used with the "using" keyword e.g. using System.Text
+
+
+
+//Declare namespace using the "namespace" keyword e.g. namespace HelloWorld
+
+
+
+//declare class using the "class" keyword e.g. class Program
+
+
+
+//Main() method is the entry point of the console application.
+
+
+
+//Console is a .NET framework class.
+
+
+
+//WriteLine() is a method.

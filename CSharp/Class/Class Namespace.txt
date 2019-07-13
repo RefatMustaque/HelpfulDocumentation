@@ -1,0 +1,34 @@
+namespace under namespace
+--------------------------
+namespace NamespaceExample
+{
+    namespace AnotherNamespace
+    {
+        public class AnotherClass
+        {
+            public void ShowHelloWorld()
+            {
+                Console.WriteLine("Hello World!");
+            }
+        }
+    }
+    
+}
+
+
+using NamespaceExample.AnotherNamespace;
+namespace Namespace
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            AnotherClass hello = new AnotherClass();
+
+            hello.ShowHelloWorld();
+        }
+    }
+}
+
+
+//output: Hello World!

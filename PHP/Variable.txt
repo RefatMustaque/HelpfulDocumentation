@@ -1,0 +1,63 @@
+Accessing Global Variable From inside function
+----------------------------------------------
+<?php
+$x = 5; //global variable
+$y = 10; //global variable
+
+function myTest() {
+    global $x, $y;
+    $y = $x + $y;
+}
+
+myTest();
+echo $y; // outputs 15
+?>
+
+
+
+$GLOBALS[index]
+--------------------
+<?php
+$x = 5;
+$y = 10;
+
+function myTest() {
+    $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
+} 
+
+myTest();
+echo $y; // outputs 15
+?>
+
+
+
+static Keyword
+-----------------------
+<?php
+function myTest() {
+    static $x = 0; //holds the value each time function is called
+    echo $x;
+    $x++;
+}
+
+myTest();
+myTest();
+myTest();
+?>
+
+//Output: 012
+
+
+
+var_dump() function
+-----------------------------
+<?php 
+$cars = array("Volvo","BMW","Toyota");
+var_dump($cars);
+?>
+
+//output:
+array (size=3)
+  0 => string 'Volvo' (length=5)
+  1 => string 'BMW' (length=3)
+  2 => string 'Toyota' (length=6)

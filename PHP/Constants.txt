@@ -1,0 +1,31 @@
+Create a PHP Constant
+---------------------------
+//define(name, value, case-insensitive)
+<?php
+define("GREETING", "Welcome to W3Schools.com!");
+echo GREETING;
+?>
+//output: Welcome to W3Schools.com!
+
+
+
+constant with a case-insensitive name
+----------------------------------------
+<?php
+define("GREETING", "Welcome to W3Schools.com!", true);
+echo greeting;
+?>
+
+
+
+Constants are Global
+--------------------------------
+<?php
+define("GREETING", "Welcome to W3Schools.com!");
+
+function myTest() {
+    echo GREETING;
+}
+ 
+myTest();
+?>

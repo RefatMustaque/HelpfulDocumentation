@@ -1,0 +1,108 @@
+----------------Syntax----------------
+
+selector {
+	PropertyName : Value;
+	PropertyName : Value;
+}
+
+p {
+    color: red;
+    text-align: center;
+}
+
+
+----------------Only Tag with id name para1----------------
+
+#para1 {
+    text-align: center;
+    color: red;
+}
+
+
+----------------All the tag with class name center----------------
+
+.center {
+    text-align: center;
+    color: red;
+}
+
+
+----------------Single tag with with class name center----------------
+
+p.center {
+    text-align: center;
+    color: red;
+}
+
+
+----------------<p> element will be styled according to class="center" and to class="large":----------------
+
+p.center {
+    text-align: center;
+    color: red;
+}
+
+p.large {
+    font-size: 300%;
+}
+
+<h1 class="center">This heading will not be affected</h1>
+<p class="center">This paragraph will be red and center-aligned.</p>
+<p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p>
+
+
+----------------Grouping selector----------------
+
+h1, h2, p {
+    text-align: center;
+    color: red;
+}
+
+
+----------------CSS comments----------------
+
+p {
+    color: red;
+    /* This is a single-line comment */
+    text-align: center;
+    /* This is
+       a multi-line
+       comment */
+}
+
+
+----------------External Style Sheet----------------
+
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+
+----------------Note: Do not add a space between the property value and the unit (such as margin-left: 20 px;). The correct way is: margin-left: 20px;----------------
+
+
+----------------Internal Style Sheet----------------
+
+<head>
+<style>
+body {
+    background-color: linen;
+}
+
+h1 {
+    color: maroon;
+    margin-left: 40px;
+} 
+</style>
+</head>
+
+
+----------------Inline Styles----------------
+
+<h1 style = "color:blue; margin-left:30px;" >This is a heading</h1>
+
+
+----------------If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.----------------
+
+
+----------------an inline style (inside a specific HTML element) has the highest priority, which means that it will override a style defined inside the <head> tag, or in an external style sheet, or a browser default value.----------------

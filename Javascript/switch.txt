@@ -1,0 +1,16 @@
+var fruit = 'apple';
+
+switch(fruit){
+    case 'apple':
+        alert('I love apple');
+        break;
+    case 'banana':
+        alert('I hate banana');
+        break;
+    case 'orange':
+        alert('Oranges are ok');
+        break;
+    default:
+        alert('I love all other fruits');
+        break; 
+}

@@ -1,0 +1,27 @@
+commit to repository
+-------------------------------
+git commit -m "Write Your Msg here"
+
+
+
+// "0 insertions(+)" - no code added
+//"0 deletions(-)" - no code removed
+
+
+
+stage & commit same time
+----------------s---------
+git commit -a -m "Do something once more"
+
+
+
+undo the last commit
+--------------------
+git reset --soft HEAD^
+
+
+
+Ammending last commit
+----------------------
+git add file-i-forgot-to-add.html
+git commit --amend -m "Add the remaining file"

@@ -1,0 +1,29 @@
+bind remote repository to local
+----------------------------
+git remote add origin https://github.com/YourUsername/some-small-app.git
+
+
+
+copying to remote repository
+-----------------------------
+git push -u origin master
+//connected to (origin) and the branch is master.
+//for "-u", we can only "git push" next time!"
+
+
+
+list of repositories
+---------------------
+git remote -v
+
+
+
+clone remote repository
+-------------------------
+git clone https://github.com/UserName/GitName.git
+
+
+
+updating content from remote repository
+----------------------------------------
+git pull

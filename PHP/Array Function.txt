@@ -1,0 +1,117 @@
+Get The Length of an Array
+--------------------------------
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+echo count($cars);
+?>
+//Output: 3
+
+
+
+Sort Array in Ascending Order
+------------------------------------
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+sort($cars);
+
+$clength = count($cars);
+for($x = 0; $x < $clength; $x++) {
+    echo $cars[$x];
+    echo "<br>";
+}
+?>
+//Output:
+BMW
+Toyota
+Volvo
+
+
+
+Sort Array in Descending Order
+--------------------------------------
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+rsort($cars);
+
+$clength = count($cars);
+for($x = 0; $x < $clength; $x++) {
+    echo $cars[$x];
+    echo "<br>";
+}
+?>
+//Output:
+Volvo
+Toyota
+BMW
+
+
+
+Sort Array (Ascending Order), According to Value
+----------------------------------------------------
+<?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+asort($age);
+
+foreach($age as $x => $x_value) {
+    echo "Key=" . $x . ", Value=" . $x_value;
+    echo "<br>";
+}
+?>
+//Output:
+Key=Peter, Value=35
+Key=Ben, Value=37
+Key=Joe, Value=43
+
+
+
+Sort Array (Ascending Order), According to Key
+---------------------------------------------------
+<?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+ksort($age);
+
+foreach($age as $x => $x_value) {
+    echo "Key=" . $x . ", Value=" . $x_value;
+    echo "<br>";
+}
+?>
+//Output:
+Key=Ben, Value=37
+Key=Joe, Value=43
+Key=Peter, Value=35
+
+
+
+Sort Array (Descending Order), According to Value
+-----------------------------------------------------
+<?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+arsort($age);
+
+foreach($age as $x => $x_value) {
+    echo "Key=" . $x . ", Value=" . $x_value;
+    echo "<br>";
+}
+?>
+//Output:
+Key=Joe, Value=43
+Key=Ben, Value=37
+Key=Peter, Value=35
+
+
+
+Sort Array (Descending Order), According to Key
+-------------------------------------------------
+<?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+krsort($age);
+
+foreach($age as $x => $x_value) {
+    echo "Key=" . $x . ", Value=" . $x_value;
+    echo "<br>";
+}
+?>
+//Output:
+Key=Peter, Value=35
+Key=Joe, Value=43
+Key=Ben, Value=37

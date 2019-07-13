@@ -1,0 +1,19 @@
+inherit DbContext Class to add Entity Model as a table
+------------------------------------------------------
+namespace EntityModelClass
+{
+	public class Trainee
+	{
+		public int Id {get; set;}
+		public string RegNo {get; set;}
+		public string Name (get; set;)
+	}
+}
+
+namespace DatabaseManagement
+{
+	public class DatabaseManagementDbContext: DbContext
+	{
+		public DbSet<Trainee> Trainees {get; set;}
+	}
+}

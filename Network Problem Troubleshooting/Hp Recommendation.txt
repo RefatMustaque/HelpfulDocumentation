@@ -1,0 +1,15 @@
+Type this in command prompt
+---------------------------------
+netsh int tcp set heuristics disabled
+netsh int tcp set global autotuninglevel=disabled
+
+netsh int tcp set global rss=enabled
+
+
+to open the TCP Global Settings
+---------------------------------
+netsh int tcp show global
+
+//Make sure all settings are disabled except Receive-Side Scaling State.
+
+//restart the computer

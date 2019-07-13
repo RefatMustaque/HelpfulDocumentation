@@ -1,0 +1,5 @@
+var numbers = [33, 44, 55, 66, 77, 88];
+
+numbers.forEach(function (params) {
+    console.log(params);
+})

@@ -1,0 +1,33 @@
+stage files
+-------------------------
+git add my_new_file.txt
+
+
+
+stage several files
+--------------------
+git add my-file.ts another-file.js new_file.rb
+
+
+
+stage a dozen files in one go
+-----------------------------
+git add . //only track files of root directory
+
+
+
+Stage all files everywhere of the project
+------------------------------------------
+git add --all
+
+
+
+remove from the staging area
+----------------------------
+git rm --cached my-file.ts
+
+
+
+As an alternative to "rm --cached <filename>"
+------------------------------------------------
+git reset file.txt

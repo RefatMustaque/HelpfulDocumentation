@@ -1,0 +1,3 @@
+EF CodeFirst: Either the parameter @objname is ambiguous or the claimed @objtype (COLUMN) is wrong
+--------------------------------------------------------------------------------------------------
+If you're using Code First and have (an) existing Migration script(s) and are trying to overwrite a change (i.e. renaming a column) that has since been deleted, then you'll get that error output. Simplest way is to delete the migration script, Add-Migration via NuGet, and then update the database.

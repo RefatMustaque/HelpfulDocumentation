@@ -1,0 +1,9 @@
+website
+------------
+gitignore.io -> visual studio
+
+
+
+to create gitIgnore file
+--------------------------
+touch .gitignore

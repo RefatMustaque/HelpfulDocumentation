@@ -1,0 +1,36 @@
+constructor
+--------------
+class MyClass
+{
+    public MyClass()
+    {
+
+    }
+}
+
+
+
+property initialization with constructor
+----------------------------------------
+namespace EntityModelClass
+{
+	public class Trainee
+	{
+		public int Id {get; set;}
+		public string RegNo {get; set;}
+		public string Name (get; set;)
+	}
+}
+
+namespace Constructor 
+{
+	Static Void Main (String[] args)
+	{
+		Trainee trainee = new Trainee()
+		{
+			Id = 001,
+			Name ="A",
+			RegNo = "001"
+		};
+	}
+}
