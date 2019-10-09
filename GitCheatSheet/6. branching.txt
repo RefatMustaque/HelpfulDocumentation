@@ -3,6 +3,10 @@ list all branches
 git branch
 
 
+list all remote branches
+----------------------------------
+git branch -a
+
 
 create a new branch
 --------------------
@@ -26,6 +30,12 @@ git merge "branch-name"
 remove the branch
 -----------------
 git branch -d branch-name
+
+
+
+remove the remote branch
+------------------------
+git push -d <remote_name> <branch_name>
 
 
 
