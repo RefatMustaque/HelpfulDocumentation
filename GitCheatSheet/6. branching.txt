@@ -42,3 +42,10 @@ git push -d <remote_name> <branch_name>
 to create and switch to branch
 ----------------------------------
 git checkout -b tonmoy
+
+
+
+to "checkout" a new remote branch (that exists only on the remote, but not locally)
+-----------------------------------------------------------------------------------
+git fetch origin
+git checkout --track origin/<remote_branch_name>
