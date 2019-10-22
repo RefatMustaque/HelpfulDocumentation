@@ -13,6 +13,10 @@ create a new branch
 git branch branch-name
 
 
+pushing local branch to remote
+-------------------------------
+git push --set-upstream origin Branch-Name
+
 
 switching branches
 ------------------
